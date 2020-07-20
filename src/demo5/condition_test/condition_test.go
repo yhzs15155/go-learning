@@ -33,4 +33,15 @@ func TestSwitchConfigtion(t *testing.T) {
 			t.Log("it is not 0-3")
 		}
 	}
+
+	for i := 0; i < 5; i++ {
+		switch {
+		case i < 3 :
+			t.Log("小于3")
+		case i < 5 :
+			t.Log("小于5")
+		default:
+			t.Log("。。。")
+		}
+	}
 }
